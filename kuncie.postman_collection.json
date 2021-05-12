@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "ba772997-428f-4de0-8c50-394b2846225b",
+		"name": "kuncie",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8082/checkout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"product_id\":1,\n        \"qty\":3\n    },\n    {\n        \"product_id\":2,\n        \"qty\":1\n    },\n    {\n        \"product_id\":4,\n        \"qty\":4\n    },\n{\n        \"product_id\":3,\n        \"qty\":4\n    }\n\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/checkout",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"checkout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
